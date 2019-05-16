@@ -1,0 +1,139 @@
+/* 主要 Banner 區域 */
+
+.banner {
+    width: 860px;
+    height: 416px;
+    background-image: url(/assets/images/others/toa-heftiba-470545-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: right;
+    padding: 40px;
+    margin: 0px auto 60px;
+  }
+  
+  .banner img {
+    width: 89px;
+    height: 328px;
+  }
+  
+  /* Container */
+  
+  .container {
+    max-width: 940px;
+    padding: 0px 42px;
+    margin: auto;
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+  
+  .container aside,
+  .container article /deep/ {
+    float: left;
+  }
+  
+  /* 甜點類別區域 */
+  
+  .container aside {
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .container aside h3,
+  .container aside li {
+    line-height: 56px;
+  }
+  
+  .container aside li {
+    border: #EAF0ED 1px solid;
+    cursor: pointer;
+  }
+  
+  .container aside li:hover,
+  .container aside li:active {
+    background-color: #EAF0ED;
+  }
+  
+  /* 商品區域 */
+  
+  .container article {
+    width: 620px;
+    padding: 0px;
+  }
+  
+  .container article /deep/ .item-list {
+    overflow: hidden;
+  }
+  
+  .container article /deep/ .choice-item {
+    margin-bottom: 20px;
+  }
+  
+  .container article /deep/ .choice-item:nth-child(2n+1) {
+    margin-right: 10px;
+  }
+  
+  
+  /* 低於 1024 之螢幕設定 */
+  @media screen and (max-width: 1023px) {
+  
+    div.mobile {
+      padding-bottom: 84px;
+    }
+  
+    .banner {
+      width: 100%;
+      height: 277px;
+      padding: 0px;
+      position: relative;
+      margin-bottom: 0px;
+    }
+  
+    .banner img {
+      width: 59px;
+      height: 218px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  
+    .container {
+      max-width: 100vw;
+      padding: 0px;
+      margin-bottom: 30px;
+    }
+  
+    .container aside,
+    .container article /deep/ {
+      float: none;
+    }
+  
+    .container aside {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+  
+    .container article /deep/ {
+      width: 100%;
+    }
+  
+    .container article /deep/ .item-list {
+      padding: 0px 30px;
+    }
+  
+    .container article /deep/ .choice-item {
+      margin-bottom: 30px;
+    }
+  
+    .pagination {
+      margin-top: 0px;
+    }
+  
+    .pagination ul {
+      position: static;
+      margin: 0px auto;
+    }
+  
+  }

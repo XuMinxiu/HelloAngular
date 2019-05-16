@@ -1,0 +1,35 @@
+<div class="item-list">
+  <!-- 本日精選區域開始 -->
+  <section class=".choice-item">
+    <!-- 精選商品區域開始 -->
+    <!-- <app-product-item *ngFor="let item of [1, 2, 3, 4, 5, 6]"></app-product-item> -->
+
+    <div *ngFor="let productItem of getProductList()" class="choice-item" >
+
+      <p class="font-light-green bg-dark-green">{{getProductItemTypeName(productItem.type)}}</p>
+
+      <div class="img-container">
+        <img src="assets/images/others/{{ productItem.image }}" alt="">
+      </div>
+      
+      <div class="description font-dark-green">
+        <p>{{ productItem.name }}</p>
+        <p>NT$ {{ productItem.price }}</p>
+      </div>
+
+      <button class="font-dark-green bg-light-green">加入購物車</button>
+
+    </div>
+    <!-- 精選商品區域結束 -->
+  </section>
+</div>
+
+<div class="pagination">
+  <ul class="font-dark-green">
+    <li><i class="material-icons">arrow_left</i></li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li><i class="material-icons">arrow_right</i></li>
+  </ul>
+</div>
